@@ -31,7 +31,7 @@ shinyServer(function(input, output){
                         lines(sd_x1,sd_y1, col = "blue", lwd = 2)
                 }    
         
-                myhist2 <- hist(log(x),ylim=c(0,10),height=300,width=800,xlab="log(Welding fume concentration in mg/m³")
+                myhist2 <- hist(log(x),ylim=c(0,10),height=300,width=800,xlab="log(Welding fume concentration in mg/m³)")
                 multiplier2 <- myhist2$counts / myhist2$density
                 mydensity2 <- density(log(x))
                 mydensity2$y <- mydensity2$y * multiplier2[1]
