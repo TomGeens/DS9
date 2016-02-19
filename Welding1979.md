@@ -1,4 +1,4 @@
-Welding1979
+The 1979 Welding Fume App
 ========================================================
 author: Tom Geens
 date: 19/02/2016
@@ -28,8 +28,32 @@ lnwf<-log(wf); welding<-data.frame(wf,lnwf); summary(welding)
 Histograms of the original and log-transformed values
 ========================================================
 
+Original scale (lognormal)
 ![plot of chunk unnamed-chunk-2](Welding1979-figure/unnamed-chunk-2-1.png)
 
 ***
 
+After log-transformation (normal)
 ![plot of chunk unnamed-chunk-3](Welding1979-figure/unnamed-chunk-3-1.png)
+
+
+The application
+========================================================
+The app is hosted on [http://www.shinyapps.io/](http://www.shinyapps.io/) under my own account. You can access it [here](https://tgeens.shinyapps.io/Welding1979/).
+
+The app visualises histograms of random subsamples from the dataset:
+- with the slider, you can sample (without replacement) n measurements  
+- with the checkbox, you can overlay lognormal and normal density plots
+- each time you change the slider and press submit, a new subsample is drawn  
+
+Summary
+========================================================
+![alt text](Fig1.png)
+
+***
+
+- the app visualises random subsampling
+- shows lognormal character of exposure
+- shows means on original and log-scales
+- combines histograms and density plots 
+- easy input: slider and checkbox
