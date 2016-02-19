@@ -17,7 +17,7 @@ lnwf<-log(wf); welding<-data.frame(wf,lnwf); summary(welding)
 Histograms of the original and log-transformed values
 ========================================================
 
-Original scale (lognormal)
+Original data (lognormal)
 ```{r, echo=FALSE}
 x <- wf
 myhist1 <- hist(x,ylim=c(0,10),xlab="Welding fume concentration in mg/m³")
@@ -39,7 +39,7 @@ lines(sd_x1,sd_y1, col = "blue", lwd = 2)
 
 ***
 
-After log-transformation (normal)
+Log-transformed data (normal)
 ```{r, echo=FALSE}     
 myhist2 <- hist(log(x),ylim=c(0,10),xlab="log(Welding fume concentration in mg/m³)")
 multiplier2 <- myhist2$counts / myhist2$density

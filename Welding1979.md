@@ -28,12 +28,12 @@ lnwf<-log(wf); welding<-data.frame(wf,lnwf); summary(welding)
 Histograms of the original and log-transformed values
 ========================================================
 
-Original scale (lognormal)
+Original data (lognormal)
 ![plot of chunk unnamed-chunk-2](Welding1979-figure/unnamed-chunk-2-1.png)
 
 ***
 
-After log-transformation (normal)
+Log-transformed data (normal)
 ![plot of chunk unnamed-chunk-3](Welding1979-figure/unnamed-chunk-3-1.png)
 
 
